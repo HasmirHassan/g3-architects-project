@@ -65,9 +65,8 @@ font-size: 1.125rem;
 font-size: 4rem;
 font-weight: 700;
 }
-.banner-description{
+.banner-description, .feature-description{
     color: rgb(114, 114, 114);
-font-size: 1rem;
 font-weight: 400;
 }
 .banner-img{
@@ -75,8 +74,42 @@ font-weight: 400;
     margin-bottom: 2rem;
 }
 
+.teams{
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.feature{
+    max-width: 537px;
+    margin-left: 4.5rem;
+}
+#quick{
+    Font-weight:500;
+Font-size: 2.8rem;
+color: rgb(114, 114, 114);
+}
+#our{
+    color: rgb(19, 19, 19);
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+#feature{
+    color: rgb(255, 144, 14);
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
 @media screen and (max-width: 600px) {
-    .links, .navbar{
+    .links, .navbar, .teams{
         flex-direction: column;
+    }
+    .team-image{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
