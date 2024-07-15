@@ -3,7 +3,11 @@
 body{
     font-family: "Work Sans", sans-serif;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* /* shared styles  */
 .display-flex{
     display: flex;
@@ -65,7 +69,7 @@ font-size: 1.125rem;
 font-size: 4rem;
 font-weight: 700;
 }
-.banner-description, .feature-description{
+.banner-description, .feature-description, .fact-description{
     color: rgb(114, 114, 114);
 font-weight: 400;
 }
@@ -111,10 +115,10 @@ color: rgb(114, 114, 114);
     margin-bottom: 8rem;
     gap: 9rem;
 }
-.feature-container{
+/* .feature-container{
     /* width: 586px; */
-height: 982px
-}
+/* height: 982px */
+
 .features-title{
     color: rgb(19, 19, 19);
 font-size: 2.5rem;
@@ -154,6 +158,57 @@ margin-bottom: 10px;
     margin-left: -6rem;
     margin-top: -6rem;
 }
+
+.facts{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.fact-content{
+max-width: 542px;
+}
+.fact-title{
+    color: rgb(19, 19, 19);
+font-size: 2.8rem;
+font-weight: 700;
+margin-top: 0px;
+margin-bottom: 1.8rem;
+}
+.fact-icon{
+    max-width: 241.83px;
+    border: 1px solid rgb(255, 144, 14);
+border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 20px;
+margin-left: 3rem;
+}
+.fact-info{
+    padding: 2.8px;
+}
+.fact-info img{
+    padding-top: 20PX;
+}
+.fact-info h4{
+    color: rgb(66, 66, 66);
+font-size: 2.8rem;
+font-weight: 600;
+}
+.fact-info p{
+    color: rgb(114, 114, 114);
+font-size: 20px;
+font-weight: 600;
+padding-bottom: 50px;
+}
+.fact-work{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
 @media screen and (max-width: 600px) {
     .links, .navbar, .teams, .feature{
         flex-direction: column;
@@ -167,9 +222,11 @@ margin-bottom: 10px;
     .feature{
         gap: 2rem;
     }
-    
+    .fact-work{
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 2rem;
+    }
 }
-
 @media screen and (min-width: 600px) and (max-width: 992px) {
     .teams, .feature{
         flex-direction: column;
@@ -179,5 +236,9 @@ margin-bottom: 10px;
     }
     .feature{
         gap: 2rem;
+    }
+    .fact-work{
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 2rem;
     }
 }
