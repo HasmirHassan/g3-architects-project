@@ -81,11 +81,12 @@ font-weight: 400;
     margin-bottom: 8rem;
 }
 .team-image{
+    /* max-width: 100%; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
-.feature{
+.team-feature{
     max-width: 537px;
     margin-left: 4.5rem;
 }
@@ -104,12 +105,79 @@ color: rgb(114, 114, 114);
     font-weight: 700;
     font-size: 2.8rem;
 }
-
+.feature{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    gap: 9rem;
+}
+.feature-container{
+    /* width: 586px; */
+height: 982px
+}
+.features-title{
+    color: rgb(19, 19, 19);
+font-size: 2.5rem;
+padding-left: 21px;
+}
+#feature-title-border{
+    border-left: 5px solid rgb(255, 144, 14); ;
+}
+.feature-card{
+     /* max-width:586px;  */
+    border-radius: 8px;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+background: rgb(255, 255, 255);
+margin-bottom: 10px;
+}
+.card-content{
+    padding: 15px;
+}
+.content-title{
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: rgb(19, 19, 19);
+    font-size: 1.25rem;
+}
+.feature-image img{
+    max-width: 100%;
+}
+#year{
+    font-weight: 700;
+    font-size: 4rem;
+}
+#experience{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+#feature-btn{
+    margin-left: -6rem;
+    margin-top: -6rem;
+}
 @media screen and (max-width: 600px) {
-    .links, .navbar, .teams{
+    .links, .navbar, .teams, .feature{
         flex-direction: column;
     }
     .team-image{
         grid-template-columns: repeat(1, 1fr);
+    }
+    #feature-btn{
+        margin: 20px;
+    }
+    .feature{
+        gap: 2rem;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .teams, .feature{
+        flex-direction: column;
+    }
+    #feature-btn{
+        margin: 20px;
+    }
+    .feature{
+        gap: 2rem;
     }
 }
